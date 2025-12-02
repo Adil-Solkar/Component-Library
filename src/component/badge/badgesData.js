@@ -1,0 +1,97 @@
+export const squareBadgesData = [{
+    text:"Badge",
+    shape:"square",
+    textColor:"#1F2937",
+    bgColor:"#F3F4F6"
+},
+{
+    text:"Badge",
+    shape:"square",
+    textColor:"#991B1B",
+    bgColor:"#FEE2E2"
+},
+{
+    text:"Badge",
+    shape:"square",
+    textColor:"#92400E",
+    bgColor:"#FEF3C7"
+},
+{
+    text:"Badge",
+    shape:"square",
+    textColor:"#065F46",
+    bgColor:"#D1FAE5"
+},
+{
+    text:"Badge",
+    shape:"square",
+    textColor:"#1E40AF",
+    bgColor:"#DBEAFE"
+},
+{
+    text:"Badge",
+    shape:"square",
+    textColor:"#3730A3",
+    bgColor:"#E0E7FF"
+},
+{
+    text:"Badge",
+    shape:"square",
+    textColor:"#5B21B6",
+    bgColor:"#EDE9FE"
+},
+{
+    text:"Badge",
+    shape:"square",
+    textColor:"#9D174D",
+    bgColor:"#FCE7F3"
+}]
+
+export const pillBadgesData = [{
+    text:"Badge",
+    shape:"pill",
+    textColor:"#1F2937",
+    bgColor:"#F3F4F6"
+},
+{
+    text:"Badge",
+    shape:"pill",
+    textColor:"#991B1B",
+    bgColor:"#FEE2E2"
+},
+{
+    text:"Badge",
+    shape:"pill",
+    textColor:"#92400E",
+    bgColor:"#FEF3C7"
+},
+{
+    text:"Badge",
+    shape:"pill",
+    textColor:"#065F46",
+    bgColor:"#D1FAE5"
+},
+{
+    text:"Badge",
+    shape:"pill",
+    textColor:"#1E40AF",
+    bgColor:"#DBEAFE"
+},
+{
+    text:"Badge",
+    shape:"pill",
+    textColor:"#3730A3",
+    bgColor:"#E0E7FF"
+},
+{
+    text:"Badge",
+    shape:"pill",
+    textColor:"#5B21B6",
+    bgColor:"#EDE9FE"
+},
+{
+    text:"Badge",
+    shape:"pill",
+    textColor:"#9D174D",
+    bgColor:"#FCE7F3"
+}]
