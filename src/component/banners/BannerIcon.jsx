@@ -10,7 +10,7 @@ switch (action) {
     case 'success':
       return ( 
         <span>
-            <IconContext.Provider value={{color:"#0FFF50"}}>
+            <IconContext.Provider value={{color:"#34D399"}}>
                 <FaCheckCircle />
             </IconContext.Provider>
         </span>)
