@@ -4,7 +4,10 @@ import Card from "./component/card/Card";
 import CardIcon from "./component/card/CardIcon";
 import CardTitle from "./component/card/CardTitle";
 import CardDescription from "./component/card/CardDescription";
+import Testimonials from "./component/testimonials/Testimonials";
+import TestimonialImage from "./component/testimonials/TestimonialImage";
 import { HiOutlineCloudUpload } from "react-icons/hi";
+import mobileImage from './assets/images/Image.png';
 
 function App() {
   return (
@@ -78,8 +81,15 @@ function App() {
           </p>
         </CardDescription>
       </Card>
+
+      <h2>3. Testimonials</h2>
+      <Testimonials>
+      <TestimonialImage>
+        <img src={mobileImage} alt="placeholder image" />
+      </TestimonialImage>
+    </Testimonials>
     </>
-  );
+   );
 }
 
 export default App;
