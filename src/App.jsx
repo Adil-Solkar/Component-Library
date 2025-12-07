@@ -4,10 +4,9 @@ import Card from "./component/card/Card";
 import CardIcon from "./component/card/CardIcon";
 import CardTitle from "./component/card/CardTitle";
 import CardDescription from "./component/card/CardDescription";
-import Testimonials from "./component/testimonials/Testimonials";
-import TestimonialImage from "./component/testimonials/TestimonialImage";
+import Testimonial from "./component/testimonial/index";
 import { HiOutlineCloudUpload } from "react-icons/hi";
-import mobileImage from './assets/images/Image.png';
+import imageUrl from "./assets/images/Image.png";
 
 function App() {
   return (
@@ -82,14 +81,41 @@ function App() {
         </CardDescription>
       </Card>
 
-      <h2>3. Testimonials</h2>
-      <Testimonials>
-      <TestimonialImage>
-        <img src={mobileImage} alt="placeholder image" />
-      </TestimonialImage>
-    </Testimonials>
+      <h2>3. Testimonial</h2>
+      <h3>With Image</h3>
+      <Testimonial>
+        <Testimonial.Image src={imageUrl} alt="May Andersons"/>
+        <Testimonial.Details>
+          <Testimonial.Quote>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna
+            nulla vitae laoreet augue. Amet feugiat est integer dolor auctor
+            adipiscing nunc urna, sit.
+          </Testimonial.Quote>
+          <Testimonial.Author>
+            <strong>May Andersons</strong>
+            <p>Workcation, CTO</p>
+          </Testimonial.Author>
+        </Testimonial.Details>
+      </Testimonial>
+
+      <h3>Without Image</h3>
+      <Testimonial>
+        <Testimonial.Image />
+        <Testimonial.Details>
+          <Testimonial.Quote>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna
+            nulla vitae laoreet augue. Amet feugiat est integer dolor auctor
+            adipiscing nunc urna, sit.
+          </Testimonial.Quote>
+          <Testimonial.Author>
+            <p>May Andersons</p>
+            <span>/</span>
+            <p>Workcation, CTO</p>
+          </Testimonial.Author>
+        </Testimonial.Details>
+      </Testimonial>
     </>
-   );
+  );
 }
 
 export default App;

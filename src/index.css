@@ -14,10 +14,7 @@ body {
   min-height: 100vh;
   margin: auto;
   padding: 1em;
-  border: 1px solid red;
 }
-
-/* typography */
 
 h1 {
   font-size: 2.25rem;
@@ -26,13 +23,9 @@ h1 {
   text-align: center;
 }
 
-/* ------------------ */
-
 h1,h2 {
   margin-bottom: 1em;
 } 
-
-
 
 /* ------------ Badges ---------- */
 
@@ -159,7 +152,7 @@ h1,h2 {
   line-height: 1.5em;
 }
 
-/*-------------------- Testimonials----------------- */
+/*-------------------- Testimonial----------------- */
 
 .testimonial-container { 
   width: 80%;
@@ -167,8 +160,6 @@ h1,h2 {
   margin: 6em auto 2em;
   background-color: #2545B8;
   color: #fff;
-  display: flex;
-  flex-direction: column;
   font-size: 1.2rem;
 }
 
@@ -197,25 +188,25 @@ h1,h2 {
   padding-right: 1.5em;
 }
 
-.testimonial-author-details { 
+.testimonial-author { 
   margin-top: 1.2em;
-  font-size: .8em;
 }
 
-.testimonial-author-details > strong { 
+.testimonial-author > strong { 
   font-weight: 500;
 }
 
-.testimonial-author-details > p { 
+.testimonial-author > p { 
   font-weight: 300;
   margin-top: .4em;
 }
 
-@media (min-width: 430px){ 
+/* add a transition when display changes */
+@media (min-width: 460px){ 
   .testimonial-container {
     width: 100%;
-    margin: 4em auto 2em; 
-    flex-direction: row;
+    margin: 4em auto 4em; 
+    display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: .7rem;
@@ -228,9 +219,82 @@ h1,h2 {
   margin-top: -15%;
   margin-bottom: -19%;
   } 
-  
+
   .testimonial{ 
     width: 65%;
+    margin: .5em 0;
   }
 }
 
+/* testimonial with no image */
+
+.testimonial-container-no-image { 
+  width: 80%;
+  margin: 2em auto 1em;
+  padding: 1em .5em;
+  background: #fff;
+}
+
+/* --------testimonial logo when no src image is passed------------- */
+
+.testimonial-no-image-container {
+  text-align: center;
+}
+
+.testimonial-no-image-container > img { 
+  width: 1.2em;
+}
+
+.logo-title-accent{ 
+  color: #2E59F3;
+}
+
+/* --------------------------------------- */
+
+.testimonial-details-no-image {
+  margin-top: 1.7em;
+}
+
+.testimonial-text-no-image { 
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+
+.testimonial-author-no-image{
+  margin-top: 1.7em;
+  font-size: .8em;
+}
+
+.testimonial-author-no-image > p {
+  margin-bottom: .2em;
+}
+
+.testimonial-author-no-image > span{
+  display: none;
+}
+
+.testimonial-author-no-image > p:last-child { 
+  color: #6B7280;
+}
+
+@media (min-width: 460px){
+  .testimonial-container-no-image { 
+    width: 100%;
+    margin: 1.5em auto 1em;
+    text-align: center;
+  }
+
+  .testimonial-author-no-image{
+    display: flex;
+    justify-content: center;
+    gap: 5px;  
+  }
+
+  .testimonial-author-no-image > span { 
+    display: inline;
+    color: #2E59F3;
+    font-weight: 800;
+  }
+}
+
+  
