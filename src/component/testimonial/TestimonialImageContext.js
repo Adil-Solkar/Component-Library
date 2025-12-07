@@ -1,4 +1,4 @@
 import React from "react"
 
-export const TestimonialImageContext = React.createContext()
+export const TestimonialImageContext = React.createContext({hasImage: false})
 

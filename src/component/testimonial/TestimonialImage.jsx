@@ -1,16 +1,8 @@
-import React, { useEffect } from "react"
+import React from "react"
 import logo from "../../assets/images/Mark.png"
 import {TestimonialImageContext} from "./TestimonialImageContext"
 function TestimonialImage({src,alt}) {
-
-  const { hasImage,setHasImage } = React.useContext(TestimonialImageContext)
-  
-  useEffect(() => {
-    if(src) {
-      setHasImage(true)
-    }
-  }, [src,setHasImage])
-  
+  const { hasImage } = React.useContext(TestimonialImageContext)
   return (
     <div className={hasImage ? "testimonial-image-container" : "testimonial-no-image-container"}>
         {hasImage 
